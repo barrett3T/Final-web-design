@@ -1,0 +1,121 @@
+<!-- Tell us your skiing ability! -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<link href="../css/mycss.css" type="text/css" rel="stylesheet">
+			<title>
+				Tell us your skiing ability
+			</title>
+	</head>
+<body>
+<div id="body2">
+
+	<!-- Navigation !-->
+	<div id="header">
+	<h1>
+		Book A Trip
+	</h1>
+	</div>
+		<div class="nav3">
+			<div class="nav-bar2"> <a href="../index.html"> Home Page </a> </div>
+			<div class="nav-bar2"> <a href="list.html"> More about CWAG</a> </div>
+			<div class="nav-bar2"> <a href="link.html"> Get to Know the Area </a></div>
+		</div>
+	
+	<hr>
+		<!-- Add Links to other pages! -->
+<hr>
+<fieldset id="booktrip">
+<legend class="skiing">   </legend>
+ <label for="name">Name:</label>
+        <input type="text" id="name" name="name" maxlength="26">
+
+        <div> <label for="age">Age:</label>
+        <input type="text" id="age" name="age" maxlength="26">
+        </div>
+
+        <div> <label for="height">Height:</label>
+        <input type="text" id="height" name="height" maxlength="26">
+        </div>
+
+        <div> <label for="weight">Weight:</label>
+        <input type="text" id="weight" name="weight" maxlength="26">
+        </div>
+
+       <div> <h3>What level skier are you?</h3>
+        <div id="level">
+            <input type="radio" id="Beginner" name="level">
+            <label for="Beginner">1 (Beginner)</label><br>
+
+            <input type="radio" id="Intermediate" name="level">
+            <label for="Intermediate">2 (Intermediate)</label><br>
+
+            <input type="radio" id="Advanced" name="level">
+            <label for="Advanced">3 (Advanced)</label><br>
+        </div>
+        </div>
+
+        <h3>How many years have you skied?</h3>
+        <select id="years" name="years">
+            <option value="LessThanaYear">Less Than a Year</option>
+            <option value="2Years">2 Years</option>
+            <option value="3-4Years">3-4 Years</option>
+            <option value="5-6Years">5-7 Years</option>
+            <option value="7-9Years">7-9 Years</option>
+            <option value="10ormoreyears">10 or more years</option>
+        </select>
+
+        <h3>Backcountry Skiing Experience</h3>
+        <textarea id="experience" name="background" rows="10" cols="50"></textarea>
+<form>
+        <h3>Select Dates:</h3>
+        <label for="check-in">Check in:</label>
+        <input type="date" id="check-in" name="check-in" required>
+
+        <label for="check-out">Check out:</label>
+        <input type="date" id="check-out" name="check-out" required>
+
+        <h3>Type of Lodging:</h3>
+        <label for="lodging-type">Choose lodging type:</label>
+        <select id="lodging-type" name="lodging-type" required>
+            <option value=""> ... </option>
+            <option value="2-beds">2 beds</option>
+            <option value="3-beds">3 beds</option>
+            <option value="4-beds">4 beds</option>
+            <option value="individual">Individual</option>
+        </select>
+
+		<h3>Meal Packages:</h3>
+        <label for="num-guests">Number of Guests:</label>
+        <input type="number" id="num-guests" name="num-guests" required>
+
+        <label for="meal-package">Select Meal Package:</label>
+        <select id="meal-package" name="meal-package" required>
+        	<option value=""> ... </option>
+            <option value="vegan">Vegan</option>
+            <option value="non-vegan">Non-Vegan</option>
+            <option value="vegetarian">Vegetarian</option>
+        </select>
+
+        <h3>Contact Info:</h3>
+        <label for="phone-number">Phone Number:</label>
+        <input type="tel" id="phone-number" name="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+
+		<div class="email">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        </div>
+
+        <button type="submit">Book Your Trip!</button>
+    </form>
+	
+</fieldset>
+
+
+
+
+
+</div>
+</body>
+</html>
